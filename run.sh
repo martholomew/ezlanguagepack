@@ -21,8 +21,6 @@ mv $language/pack/src/main/res/values/LANGUAGE_NAME_pack_strings.xml $language/p
 mv $language/pack/src/main/res/values/LANGUAGE_NAME_pack_strings_dont_translate.xml $language/pack/src/main/res/values/"$language"_pack_strings_dont_translate.xml
 mv $language/pack/src/main/res/xml/LANGUAGE_NAME_autotext.xml $language/pack/src/main/res/xml/"$language"_autotext.xml
 mv $language/pack/src/main/res/xml/LANGUAGE_NAME_dictionaries.xml $language/pack/src/main/res/xml/"$language"_dictionaries.xml
-mv $language/pack/src/main/res/xml/LANGUAGE_NAME_keyboards.xml $language/pack/src/main/res/xml/"$language"_keyboards.xml
-mv $language/pack/src/main/res/xml/LANGUAGE_NAME_physical.xml $language/pack/src/main/res/xml/"$language"_physical.xml
 
 echo "/apk/flag   add flag"
 echo "/pack/dictionary    add dictionaries"
