@@ -1,2 +1,2 @@
-exec replace.sh
-exec python -m make_keyboards.py $@
+./replace.sh $@
+./make_keyboards.py $@

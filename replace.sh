@@ -1,10 +1,9 @@
 #!/bin/bash
-echo -n "Pretty Name: "
-read pretty
-echo -n "Un-Pretty Name: "
-read language
-echo -n "ISO 639-1: "
-read short
+
+language="$1"
+short="$2"
+
+pretty=$(echo -n "${language^}")
 
 mv LANGUAGE_NAME $language
 
@@ -16,14 +15,10 @@ mv $language/pack/src/main/java/com/anysoftkeyboard/languagepack/LANGUAGE_NAME $
 mv $language/pack/src/main/res/values/LANGUAGE_NAME_pack_strings.xml $language/pack/src/main/res/values/"$language"_pack_strings.xml
 mv $language/pack/src/main/res/values/LANGUAGE_NAME_pack_strings_dont_translate.xml $language/pack/src/main/res/values/"$language"_pack_strings_dont_translate.xml
 mv $language/pack/src/main/res/xml/LANGUAGE_NAME_autotext.xml $language/pack/src/main/res/xml/"$language"_autotext.xml
-mv $language/pack/src/main/res/xml/LANGUAGE_NAME_dictionaries.xml $language/pack/src/main/res/xml/"$language"_dictionaries.xml
 
 echo "/apk/flag   add flag"
 echo "/pack/dictionary    add dictionaries"
 echo "/pack/src/main/res/values    change values(if necessary)"
-echo "/pack/src/main/res/xml   add keyboards etc"
-echo "/pack/src/main/res/xml/"$language"_dictionaries.xml   https://www.guidgenerator.com/online-guid-generator.aspx"
-echo "/pack/src/main/res/xml/"$language"_keyboards.xml  https://www.guidgenerator.com/online-guid-generator.aspx"
 echo "Copy the folder into LanguagePack/languages."
 echo "Add language to the end of LanguagePack/settings.gradle."
 echo "Do the commands below:"
