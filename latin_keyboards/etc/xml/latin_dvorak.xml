@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ask="http://schemas.android.com/apk/res-auto"
+    android:keyWidth="10%p">
+
+    <Row>
+        <Key android:codes="@integer/key_code_delete" android:keyWidth="20%p"
+             android:isRepeatable="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="'"/>
+        <Key android:codes="p"/>
+        <Key android:codes="y" android:popupCharacters="ý"/>
+        <Key android:codes="f"/>
+        <Key android:codes="g"/>
+        <Key android:codes="c"/>
+        <Key android:codes="r" android:popupCharacters="ř"/>
+        <Key android:codes="l" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="a" android:popupCharacters="æåäá" android:keyEdgeFlags="left"/>
+        <Key android:codes="o" android:popupCharacters="óøö" />
+        <Key android:codes="e" android:popupCharacters="éėěë"/>
+        <Key android:codes="u" android:popupCharacters="úůü" />
+        <Key android:codes="i" android:popupCharacters="í"/>
+        <Key android:codes="d" android:popupCharacters="ďđ"/>
+        <Key android:codes="h"/>
+        <Key android:codes="t" android:popupCharacters="ť"/>
+        <Key android:codes="n" android:popupCharacters="ň"/>
+        <Key android:codes="s" android:popupCharacters="š" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="@integer/key_code_shift"
+             android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="q"/>
+        <Key android:codes="j"/>
+        <Key android:codes="k"/>
+        <Key android:codes="x"/>
+        <Key android:codes="b"/>
+        <Key android:codes="m"/>
+        <Key android:codes="w"/>
+        <Key android:codes="v"/>
+        <Key android:codes="z" android:popupCharacters="ž" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>

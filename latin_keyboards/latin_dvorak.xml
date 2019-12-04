@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ask="http://schemas.android.com/apk/res-auto"
+    android:keyWidth="10%p">
+
+    <Row>
+        <Key android:codes="@integer/key_code_delete" android:keyWidth="20%p"
+             android:isRepeatable="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="'"/>
+        <Key android:codes="p"/>
+        <Key android:codes="y"/>
+        <Key android:codes="f"/>
+        <Key android:codes="g"/>
+        <Key android:codes="c"/>
+        <Key android:codes="r"/>
+        <Key android:codes="l" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="a" android:keyEdgeFlags="left"/>
+        <Key android:codes="o" />
+        <Key android:codes="e"/>
+        <Key android:codes="u" />
+        <Key android:codes="i"/>
+        <Key android:codes="d"/>
+        <Key android:codes="h"/>
+        <Key android:codes="t"/>
+        <Key android:codes="n"/>
+        <Key android:codes="s" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="@integer/key_code_shift"
+             android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="q"/>
+        <Key android:codes="j"/>
+        <Key android:codes="k"/>
+        <Key android:codes="x"/>
+        <Key android:codes="b"/>
+        <Key android:codes="m"/>
+        <Key android:codes="w"/>
+        <Key android:codes="v"/>
+        <Key android:codes="z" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>

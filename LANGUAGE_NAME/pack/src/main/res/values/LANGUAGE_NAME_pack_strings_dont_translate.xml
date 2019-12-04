@@ -4,7 +4,4 @@
            tools:ignore="MissingTranslation,TypographyDashes">
 
     <string name="LANGUAGE_NAME_dictionary">PRETTY_NAME</string>
-
-    <string name="LANGUAGE_NAME_keyboard">PRETTY_NAME</string>
-    <string name="LANGUAGE_NAME_keyboard_description">PRETTY_NAME keyboard</string>
 </resources>

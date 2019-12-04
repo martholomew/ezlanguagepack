@@ -1,0 +1,47 @@
+{
+    "keyboard": {
+        "keyWidth": "10%p",
+        "rows": [
+            {
+                "keys": [
+                    {"codes":"q","keyEdgeFlags":"left"},
+                    {"codes":"w"},
+                    {"codes":"e","popupCharacters":"éėěë"},
+                    {"codes":"r","popupCharacters":"ř"},
+                    {"codes":"t","popupCharacters":"ť"},
+                    {"codes":"y","popupCharacters":"ý"},
+                    {"codes":"u","popupCharacters":"úůü"},
+                    {"codes":"i","popupCharacters":"í"},
+                    {"codes":"o","popupCharacters":"óøö"},
+                    {"codes":"p","keyEdgeFlags":"right"}
+                ]
+            },
+            {
+                "keys": [
+                    {"codes":"a","popupCharacters":"æåäá","horizontalGap":"5%p","keyEdgeFlags":"left"},
+                    {"codes":"s","popupCharacters":"š"},
+                    {"codes":"d","popupCharacters":"ďđ"},
+                    {"codes":"f"},
+                    {"codes":"g"},
+                    {"codes":"h"},
+                    {"codes":"j"},
+                    {"codes":"k"},
+                    {"codes":"l","keyEdgeFlags":"right"}
+                ]
+            },
+            {
+                "keys": [
+                    {"codes":"@integer/key_code_shift","keyWidth":"15%p","isModifier":"true","isSticky":"true","keyEdgeFlags":"left"},
+                    {"codes":"z","popupCharacters":"ž"},
+                    {"codes":"x"},
+                    {"codes":"c"},
+                    {"codes":"v"},
+                    {"codes":"b"},
+                    {"codes":"n","popupCharacters":"ň"},
+                    {"codes":"m"},
+                    {"codes":"@integer/key_code_delete","keyWidth":"15%p","isRepeatable":"true","keyEdgeFlags":"right"}
+                ]
+            }
+        ]
+    }
+}
