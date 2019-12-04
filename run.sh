@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+exec replace.sh
+exec python -m make_keyboards.py $@
+=======
 #!/bin/bash
 echo -n "Pretty Name: "
 read pretty
@@ -34,3 +38,4 @@ echo "./gradlew :languages:$language:apk:assembleDebug"
 echo "Test the keyboard, and get your screenshots to add here:"
 echo "/apk/src/main/play/listings/en-US/graphics/screenshots"
 echo "Push n Pull."
+>>>>>>> ec5d9a5253f7a6816cdef3935e199de85a0f613b
