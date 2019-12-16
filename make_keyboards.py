@@ -38,9 +38,10 @@ for keyboard in keyboards:
         for alpha in accents:
             for key in xml.iter('Key'):
                 if key.attrib[codes] == alpha:
-                    key.attrib[popup] = f"@xml/popup_{alpha}"
-                else:
-                    key.attrib[popup_chara] = ""
+                    key.attrib[popup] = f"@xml/{language}_popup_{alpha}"
+        for key in xml.iter('Key'):
+            if key.attrib[codes] not in accents:
+                key.attrib[popup_chara] = ""
 
         new_keyboard = f"{language}/pack/src/main/res/xml/{language}_{keyboard_type}.xml"
         tree = et.ElementTree(xml)

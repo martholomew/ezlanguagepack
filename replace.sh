@@ -5,7 +5,7 @@ short="$2"
 
 pretty=$(echo -n "${language^}")
 
-mv LANGUAGE_NAME $language
+cp -R LANGUAGE_NAME/ $language/
 
 find $language/. -type f -exec sed -i "s/PRETTY_NAME/"$pretty"/g" {} +
 find $language/. -type f -exec sed -i "s/LANGUAGE_NAME/"$language"/g" {} +
