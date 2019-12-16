@@ -9,7 +9,7 @@ from os.path import isfile, join
 from pprint import pprint
 import xml.etree.ElementTree as et
 
-
+# android:popupCharacters="1"
 with open("lang_acc.json", "r") as f:
     langs = json.load(f)
 
@@ -27,6 +27,7 @@ keyboards = [join(latin_dir, f) for f in listdir(latin_dir) if isfile(join(latin
 schema = '{http://schemas.android.com/apk/res/android}'
 codes = schema + "codes"
 popup = schema + "popupKeyboard"
+popup_chara = schema + "popupCharacters"
 index = 1
 keyboards_xml = et.Element('Keyboards')
 for keyboard in keyboards:
@@ -38,6 +39,8 @@ for keyboard in keyboards:
             for key in xml.iter('Key'):
                 if key.attrib[codes] == alpha:
                     key.attrib[popup] = f"@xml/popup_{alpha}"
+                else:
+                    key.attrib[popup_chara] = ""
 
         new_keyboard = f"{language}/pack/src/main/res/xml/{language}_{keyboard_type}.xml"
         tree = et.ElementTree(xml)
