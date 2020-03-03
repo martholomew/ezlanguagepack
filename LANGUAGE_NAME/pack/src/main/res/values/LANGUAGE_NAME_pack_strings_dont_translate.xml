@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools"
            xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"
-           tools:ignore="MissingTranslation,TypographyDashes">
+           tools:ignore="MissingTranslation,TypographyDashes"> 
+    <string name="LANGUAGE_NAME_dictionary">PRETTY_NAME</string>
+
+    <string name="LANGUAGE_NAME_keyboard">PRETTY_NAME</string>
+    <string name="LANGUAGE_NAME_keyboard_description">PRETTY_NAME keyboard</string>
 </resources>

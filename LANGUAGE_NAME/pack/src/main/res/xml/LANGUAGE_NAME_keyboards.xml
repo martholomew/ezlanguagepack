@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyboards>
+    <Keyboard nameResId="@string/LANGUAGE_NAME_keyboard" iconResId="@drawable/ic_status_LANGUAGE_NAME"
+              layoutResId="@xml/LANGUAGE_NAME" id="MD5SUMHERE"
+              defaultDictionaryLocale="LANGUAGE_SHORT" description="@string/LANGUAGE_NAME_keyboard_description"
+              index="1" defaultEnabled="true"
+              physicalKeyboardMappingResId="@xml/LANGUAGE_NAME_physical" />
+</Keyboards>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionaries>
+    <Dictionary
+        autoTextResourceId="@xml/LANGUAGE_NAME_autotext"
+        description="@string/LANGUAGE_NAME_dictionary_description"
+        dictionaryResourceId="@array/LANGUAGE_NAME_words_dict_array"
+        id="MD5SUMHERE"
+        locale="LANGUAGE_SHORT"
+        nameResId="@string/LANGUAGE_NAME_dictionary"
+        type="binary_resource" />
+</Dictionaries>
